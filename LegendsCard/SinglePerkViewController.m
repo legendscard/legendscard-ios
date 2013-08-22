@@ -71,9 +71,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 36, 26)];
-    [btn setImage:[UIImage imageNamed:@"back-button-unpressed"] forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:@"back-button-pressed"] forState:UIControlStateHighlighted];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [btn setImage:[UIImage imageNamed:@"back-button"] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc]initWithCustomView:btn];
     self.navigationItem.leftBarButtonItem = backBtn;

@@ -20,7 +20,7 @@
     if (self) {
         [self setAdjustsImageWhenHighlighted:NO];
         [self.titleLabel setTextAlignment:NSTextAlignmentCenter];
-        [self.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Light" size:18]];
+        [self.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:15]];
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     }

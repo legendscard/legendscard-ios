@@ -20,6 +20,7 @@
 		030F62CE17C5C01E00904712 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030F62C517C5C01E00904712 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		030F62D017C5C19400904712 /* loadmore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030F62CF17C5C19400904712 /* loadmore@2x.png */; };
 		030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 030F62D117C5C2A500904712 /* Cubano-Regular.otf */; };
+		03123F7717C5C5A000715FFC /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03123F7617C5C5A000715FFC /* back-button@2x.png */; };
 		03139C1B17C5A60900B4435E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1A17C5A60900B4435E /* UIKit.framework */; };
 		03139C1D17C5A60900B4435E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1C17C5A60900B4435E /* Foundation.framework */; };
 		03139C1F17C5A60900B4435E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1E17C5A60900B4435E /* CoreGraphics.framework */; };
@@ -98,8 +99,6 @@
 		03ECFD1717C5B2E200EF52D5 /* shop-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ECFD0F17C5B2E200EF52D5 /* shop-pressed@2x.png */; };
 		03ECFD1817C5B2E200EF52D5 /* shop-unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ECFD1017C5B2E200EF52D5 /* shop-unpressed.png */; };
 		03ECFD1B17C5B44700EF52D5 /* JS7Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFD1A17C5B44700EF52D5 /* JS7Button.m */; };
-		03ECFD1E17C5B7FF00EF52D5 /* back-button-unpressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ECFD1C17C5B7FF00EF52D5 /* back-button-unpressed@2x.png */; };
-		03ECFD1F17C5B7FF00EF52D5 /* back-button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ECFD1D17C5B7FF00EF52D5 /* back-button-pressed@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +117,7 @@
 		030F62C517C5C01E00904712 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		030F62CF17C5C19400904712 /* loadmore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadmore@2x.png"; sourceTree = "<group>"; };
 		030F62D117C5C2A500904712 /* Cubano-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cubano-Regular.otf"; sourceTree = "<group>"; };
+		03123F7617C5C5A000715FFC /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
 		03139C1717C5A60900B4435E /* LegendsCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegendsCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03139C1A17C5A60900B4435E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03139C1C17C5A60900B4435E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -226,8 +226,6 @@
 		03ECFD1017C5B2E200EF52D5 /* shop-unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop-unpressed.png"; sourceTree = "<group>"; };
 		03ECFD1917C5B44700EF52D5 /* JS7Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JS7Button.h; sourceTree = "<group>"; };
 		03ECFD1A17C5B44700EF52D5 /* JS7Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JS7Button.m; sourceTree = "<group>"; };
-		03ECFD1C17C5B7FF00EF52D5 /* back-button-unpressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button-unpressed@2x.png"; sourceTree = "<group>"; };
-		03ECFD1D17C5B7FF00EF52D5 /* back-button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button-pressed@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -523,8 +521,7 @@
 		03ECFD2017C5B81600EF52D5 /* Back Button */ = {
 			isa = PBXGroup;
 			children = (
-				03ECFD1C17C5B7FF00EF52D5 /* back-button-unpressed@2x.png */,
-				03ECFD1D17C5B7FF00EF52D5 /* back-button-pressed@2x.png */,
+				03123F7617C5C5A000715FFC /* back-button@2x.png */,
 			);
 			name = "Back Button";
 			sourceTree = "<group>";
@@ -611,8 +608,6 @@
 				03ECFD1617C5B2E200EF52D5 /* live-unpressed@2x.png in Resources */,
 				03ECFD1717C5B2E200EF52D5 /* shop-pressed@2x.png in Resources */,
 				03ECFD1817C5B2E200EF52D5 /* shop-unpressed.png in Resources */,
-				03ECFD1E17C5B7FF00EF52D5 /* back-button-unpressed@2x.png in Resources */,
-				03ECFD1F17C5B7FF00EF52D5 /* back-button-pressed@2x.png in Resources */,
 				030F62B917C5BF5500904712 /* FeedViewController.xib in Resources */,
 				030F62C617C5C01E00904712 /* blackArrow.png in Resources */,
 				030F62C717C5C01E00904712 /* blackArrow@2x.png in Resources */,
@@ -624,6 +619,7 @@
 				030F62CD17C5C01E00904712 /* whiteArrow@2x.png in Resources */,
 				030F62D017C5C19400904712 /* loadmore@2x.png in Resources */,
 				030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */,
+				03123F7717C5C5A000715FFC /* back-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
