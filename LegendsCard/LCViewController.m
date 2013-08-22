@@ -9,6 +9,7 @@
 #import "LCViewController.h"
 #import "UIView+Animation.h"
 #import "PerksViewController.h"
+#import "FeedViewController.h"
 #import "JS7Button.h"
 
 typedef void(^AnimationCompletionBlock)(BOOL finished);
@@ -26,10 +27,14 @@ static const NSInteger kPerksButtonTag = 2;
 @property (strong, nonatomic) PerksViewController *perksViewController;
 @property (strong, nonatomic) UINavigationController *perksNavController;
 
+@property (strong, nonatomic) FeedViewController *feedViewController;
+@property (strong, nonatomic) UINavigationController *feedNavController;
+
 - (void)setupButtons;
 - (void)animateButtonsOffScreen;
 - (void)animateButtonsOnScreen;
 - (void)createViewControllers;
+- (void)formatNavControllers;
 - (void)didTapButton:(id)sender;
 - (void)updateMainViewController:(UIViewController*)vc;
 - (void)resetMainViewController;
@@ -99,20 +104,30 @@ static const NSInteger kPerksButtonTag = 2;
     self.perksViewController = [[PerksViewController alloc]init];
     [self.perksViewController setCameFromHome:YES];
     self.perksNavController = [[UINavigationController alloc]initWithRootViewController:self.perksViewController];
-
-    JS7Button *btn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
-    [btn setTitle:@"Back" forState:UIControlStateNormal];
     
-    [btn performBlockOnTouchUpInside:^(id sender) {
-        [self resetMainViewController];
-        [self animateButtonsOnScreen];
-    }];
-
-    [btn setTextColor:[UIColor whiteColor] highlightedTextColor:[UIColor grayColor]];
-    UIBarButtonItem *bbI = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.perksViewController.navigationItem.leftBarButtonItem = bbI;
+    self.feedViewController = [[FeedViewController alloc]init];
+    self.feedNavController = [[UINavigationController alloc]initWithRootViewController:self.feedViewController];
     
-    for (UINavigationController *navController in @[self.perksNavController])
+    for (UIViewController *viewController in @[self.perksViewController, self.feedViewController]) {
+        JS7Button *btn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
+        [btn setTitle:@"Back" forState:UIControlStateNormal];
+        
+        [btn performBlockOnTouchUpInside:^(id sender) {
+            [self resetMainViewController];
+            [self animateButtonsOnScreen];
+        }];
+        
+        [btn setTextColor:[UIColor whiteColor] highlightedTextColor:[UIColor grayColor]];
+        UIBarButtonItem *bbI = [[UIBarButtonItem alloc]initWithCustomView:btn];
+        viewController.navigationItem.leftBarButtonItem = bbI;
+    }
+    
+    [self formatNavControllers];
+}
+
+- (void)formatNavControllers
+{
+    for (UINavigationController *navController in @[self.perksNavController, self.feedNavController])
         [navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
     
     if ([[UINavigationBar class] respondsToSelector:@selector(appearance)])
@@ -134,7 +149,7 @@ static const NSInteger kPerksButtonTag = 2;
     UIButton *b = (UIButton*)sender;
     switch (b.tag) {
         case kFeedButtonTag:
-            //show the feed view controller
+            [self updateMainViewController:self.feedNavController];
             break;
         case kPerksButtonTag:
             [self updateMainViewController:self.perksNavController];
