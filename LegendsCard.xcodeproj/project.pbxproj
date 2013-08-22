@@ -19,6 +19,7 @@
 		030F62CD17C5C01E00904712 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030F62C317C5C01E00904712 /* whiteArrow@2x.png */; };
 		030F62CE17C5C01E00904712 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030F62C517C5C01E00904712 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		030F62D017C5C19400904712 /* loadmore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030F62CF17C5C19400904712 /* loadmore@2x.png */; };
+		030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 030F62D117C5C2A500904712 /* Cubano-Regular.otf */; };
 		03139C1B17C5A60900B4435E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1A17C5A60900B4435E /* UIKit.framework */; };
 		03139C1D17C5A60900B4435E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1C17C5A60900B4435E /* Foundation.framework */; };
 		03139C1F17C5A60900B4435E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1E17C5A60900B4435E /* CoreGraphics.framework */; };
@@ -116,6 +117,7 @@
 		030F62C417C5C01E00904712 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		030F62C517C5C01E00904712 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		030F62CF17C5C19400904712 /* loadmore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadmore@2x.png"; sourceTree = "<group>"; };
+		030F62D117C5C2A500904712 /* Cubano-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cubano-Regular.otf"; sourceTree = "<group>"; };
 		03139C1717C5A60900B4435E /* LegendsCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegendsCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03139C1A17C5A60900B4435E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03139C1C17C5A60900B4435E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -384,6 +386,7 @@
 		03139C4F17C5A6FE00B4435E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				030F62D117C5C2A500904712 /* Cubano-Regular.otf */,
 				030F62CF17C5C19400904712 /* loadmore@2x.png */,
 				03ECFD2017C5B81600EF52D5 /* Back Button */,
 				03ECFD0717C5B2B700EF52D5 /* Map Pins */,
@@ -620,6 +623,7 @@
 				030F62CC17C5C01E00904712 /* whiteArrow.png in Resources */,
 				030F62CD17C5C01E00904712 /* whiteArrow@2x.png in Resources */,
 				030F62D017C5C19400904712 /* loadmore@2x.png in Resources */,
+				030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

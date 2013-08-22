@@ -68,13 +68,28 @@ static const NSInteger kPerksButtonTag = 2;
     feed.tag = kFeedButtonTag;
     [feed setBackgroundImage:[UIImage imageNamed:@"feed-pannel"] forState:UIControlStateNormal];
     [self.view addSubview:feed];
+    // add the label
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, feed.frame.size.width, 200)];
+    [label setText:@"FEED"];
+    [feed addSubview:label];
     self.feedButton = feed;
     
     UIButton *perks = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 + buffer, 0, self.view.frame.size.width/2 - buffer, self.view.frame.size.height)];
     perks.tag = kPerksButtonTag;
     [perks setBackgroundImage:[UIImage imageNamed:@"perks-pannel"] forState:UIControlStateNormal];
     [self.view addSubview:perks];
+    // add label
+    UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(0, perks.frame.size.height - 20 - 200, perks.frame.size.width, 200)];
+    [label2 setText:@"PERKS"];
+    [perks addSubview:label2];
     self.perksButton = perks;
+    
+    for (UILabel *l in @[label, label2]) {
+        [l setTextAlignment:NSTextAlignmentCenter];
+        [l setBackgroundColor:[UIColor clearColor]];
+        [l setTextColor:[UIColor whiteColor]];
+        [l setFont:[UIFont fontWithName:@"Cubano-Regular" size:30]];
+    }
     
     [feed addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
     [perks addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
