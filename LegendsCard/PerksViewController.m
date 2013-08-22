@@ -15,6 +15,7 @@
 #import "UILabel+ConfigureLabelText.h"
 #import "UIView+Animation.h"
 #import "CacheController.h"
+#import "JS7Button.h"
 
 #define BUFFER_ZONE 16
 #define SQUARE_SIZE 86
@@ -66,7 +67,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"#perks";
+        self.title = @"Perks";
         // Custom initialization
     }
     return self;
@@ -89,13 +90,6 @@
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     documentsDirectory = [paths objectAtIndex:0];
-    
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 36, 26)];
-    [btn setImage:[UIImage imageNamed:@"back-button-unpressed"] forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:@"back-button-pressed"] forState:UIControlStateHighlighted];
-    [btn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *backBtn = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.leftBarButtonItem = backBtn;
 
     //Show the hud
     
@@ -244,7 +238,11 @@
     pCont.delegate = self;
     [pCont fetchEntries];
     
-    UIBarButtonItem *viewAllMapBtn = [[UIBarButtonItem alloc]initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:self action:@selector(mapAll)];
+    JS7Button *mapBtn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
+    [mapBtn setTitle:@"Map"];
+    [mapBtn addTarget:self action:@selector(mapAll) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *viewAllMapBtn = [[UIBarButtonItem alloc]initWithCustomView:mapBtn];
     self.navigationItem.rightBarButtonItem = viewAllMapBtn;
     
     mySearchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0 + SEARCH_BAR_BUFFER, 320, 40)];

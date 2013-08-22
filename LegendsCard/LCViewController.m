@@ -9,6 +9,7 @@
 #import "LCViewController.h"
 #import "UIView+Animation.h"
 #import "PerksViewController.h"
+#import "JS7Button.h"
 
 typedef void(^AnimationCompletionBlock)(BOOL finished);
 
@@ -20,6 +21,7 @@ static const NSInteger kPerksButtonTag = 2;
 @property (strong, nonatomic) UIButton *feedButton, *perksButton;
 
 @property (strong, nonatomic) UIViewController *mainViewController;
+@property (strong, nonatomic) UIViewController *backgroundViewController;
 
 @property (strong, nonatomic) PerksViewController *perksViewController;
 @property (strong, nonatomic) UINavigationController *perksNavController;
@@ -29,6 +31,8 @@ static const NSInteger kPerksButtonTag = 2;
 - (void)animateButtonsOnScreen;
 - (void)createViewControllers;
 - (void)didTapButton:(id)sender;
+- (void)updateMainViewController:(UIViewController*)vc;
+- (void)resetMainViewController;
 
 @end
 
@@ -41,7 +45,6 @@ static const NSInteger kPerksButtonTag = 2;
     
     [self setupButtons];
     [self createViewControllers];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,20 +84,49 @@ static const NSInteger kPerksButtonTag = 2;
 
 - (void)animateButtonsOnScreen
 {
-    
+    [self.feedButton move:UIViewMoveDirectionRight by:self.view.frame.size.width/2 withDuration:0.3 completionBlock:nil];
+    [self.perksButton move:UIViewMoveDirectionLeft by:self.view.frame.size.width/2 withDuration:0.3 completionBlock:nil];
 }
 
 - (void)createViewControllers
 {
-    self.mainViewController = [[UIViewController alloc]init];
-    self.mainViewController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    self.backgroundViewController = [[UIViewController alloc]init];
+    self.backgroundViewController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    self.mainViewController = self.backgroundViewController;
     self.mainViewController.view.frame = self.view.bounds;
-    [self.view addSubview:self.mainViewController.view];
-    [self.view sendSubviewToBack:self.mainViewController.view];
+    [self resetMainViewController];
     
     self.perksViewController = [[PerksViewController alloc]init];
     [self.perksViewController setCameFromHome:YES];
     self.perksNavController = [[UINavigationController alloc]initWithRootViewController:self.perksViewController];
+
+    JS7Button *btn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
+    [btn setTitle:@"Back" forState:UIControlStateNormal];
+    
+    [btn performBlockOnTouchUpInside:^(id sender) {
+        [self resetMainViewController];
+        [self animateButtonsOnScreen];
+    }];
+
+    [btn setTextColor:[UIColor whiteColor] highlightedTextColor:[UIColor grayColor]];
+    UIBarButtonItem *bbI = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.perksViewController.navigationItem.leftBarButtonItem = bbI;
+    
+    for (UINavigationController *navController in @[self.perksNavController])
+        [navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
+    
+    if ([[UINavigationBar class] respondsToSelector:@selector(appearance)])
+    {
+        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                              [UIColor whiteColor], UITextAttributeTextColor,
+                                                              [UIColor clearColor], UITextAttributeTextShadowColor,
+                                                              [NSValue valueWithUIOffset:UIOffsetMake(1, 0)], UITextAttributeTextShadowOffset,
+                                                              [UIFont fontWithName:@"Helvetica-Light" size:22], UITextAttributeFont,
+                                                              nil]];
+        
+        [[UINavigationBar appearance]setShadowImage:[[UIImage alloc] init]];
+    }
+    
 }
 
 - (void)didTapButton:(id)sender
@@ -121,6 +153,11 @@ static const NSInteger kPerksButtonTag = 2;
     self.mainViewController.view.frame = oldFrame;
     [self.view addSubview:self.mainViewController.view];
     [self.view sendSubviewToBack:self.mainViewController.view];
+}
+
+- (void)resetMainViewController
+{
+    [self updateMainViewController:self.backgroundViewController];
 }
 
 @end
