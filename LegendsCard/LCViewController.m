@@ -11,6 +11,8 @@
 #import "PerksViewController.h"
 #import "FeedViewController.h"
 #import "JS7Button.h"
+#import "LCChooseSchoolViewController.h"
+#import "User.h"
 
 typedef void(^AnimationCompletionBlock)(BOOL finished);
 
@@ -30,10 +32,14 @@ static const NSInteger kPerksButtonTag = 2;
 @property (strong, nonatomic) FeedViewController *feedViewController;
 @property (strong, nonatomic) UINavigationController *feedNavController;
 
+@property (strong, nonatomic) LCChooseSchoolViewController *chooseSchoolVC;
+@property (strong, nonatomic) JS7Button *chooseSchoolButton;
+
 - (void)setupButtons;
 - (void)animateButtonsOffScreen;
 - (void)animateButtonsOnScreen;
 - (void)createViewControllers;
+- (void)createChooseSchoolButton;
 - (void)formatNavControllers;
 - (void)didTapButton:(id)sender;
 - (void)updateMainViewController:(UIViewController*)vc;
@@ -48,8 +54,33 @@ static const NSInteger kPerksButtonTag = 2;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     
+    self.chooseSchoolVC = [[LCChooseSchoolViewController alloc]init];
+    
+    __weak typeof(self) weakSelf = self;
+    [self.chooseSchoolVC setBlock:^{
+        [weakSelf.feedViewController fetchData];
+        [weakSelf.perksViewController fetchData];
+    }];
+    
+    
+    
     [self setupButtons];
     [self createViewControllers];
+    [self createChooseSchoolButton];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // determine if the school code is stored yet
+    NSString *schoolCode = [[NSUserDefaults standardUserDefaults] valueForKey:kNSUDSchoolCodeKey];
+    if (!schoolCode) {
+        [self presentViewController:self.chooseSchoolVC animated:NO completion:nil];
+    }
+    else {
+        [[User sharedInstance] setSchool:schoolCode];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,12 +129,14 @@ static const NSInteger kPerksButtonTag = 2;
 
 - (void)animateButtonsOffScreen
 {
+    [self.chooseSchoolButton partialFadeWithDuration:0.3 afterDelay:0. withFinalAlpha:0. completionBlock:nil];
     [self.feedButton move:UIViewMoveDirectionLeft by:self.view.frame.size.width/2 withDuration:0.3 completionBlock:nil];
     [self.perksButton move:UIViewMoveDirectionRight by:self.view.frame.size.width/2 withDuration:0.3 completionBlock:nil];
 }
 
 - (void)animateButtonsOnScreen
 {
+    [self.chooseSchoolButton partialFadeWithDuration:0.3 afterDelay:0. withFinalAlpha:.7 completionBlock:nil];
     [self.feedButton move:UIViewMoveDirectionRight by:self.view.frame.size.width/2 withDuration:0.3 completionBlock:nil];
     [self.perksButton move:UIViewMoveDirectionLeft by:self.view.frame.size.width/2 withDuration:0.3 completionBlock:nil];
 }
@@ -138,6 +171,20 @@ static const NSInteger kPerksButtonTag = 2;
     }
     
     [self formatNavControllers];
+}
+
+- (void)createChooseSchoolButton
+{
+    static CGFloat btnHeight = 30., btnWidth = 100.;
+    self.chooseSchoolButton = [[JS7Button alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - btnHeight, btnWidth, btnHeight)];
+    [self.chooseSchoolButton setTitle:@"Choose School"];
+    [self.chooseSchoolButton setBackgroundColor:[UIColor colorWithWhite:0. alpha:0.7]];
+    [self.chooseSchoolButton.titleLabel setFont:[UIFont fontWithName:@"Cubano-Regular" size:13]];
+    [self.chooseSchoolButton performBlockOnTouchUpInside:^(id sender) {
+        [self presentViewController:self.chooseSchoolVC animated:YES completion:nil];
+    }];
+    
+    [self.view addSubview:self.chooseSchoolButton];
 }
 
 - (void)formatNavControllers

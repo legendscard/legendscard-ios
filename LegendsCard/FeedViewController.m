@@ -119,10 +119,7 @@
     feedCont = [[FeedController alloc]init];
     feedCont.delegate = self;
     
-    [self showTheHud];
-
-    self.didReceiveFirstDataSet = NO;
-    [feedCont fetchAllPosts];
+    [self fetchData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -145,6 +142,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)fetchData
+{
+    [self showTheHud];
+    
+    self.didReceiveFirstDataSet = NO;
+    [feedCont fetchAllPosts];
 }
 
 #pragma mark - FeedControllerDelegate methods
@@ -516,5 +521,7 @@
     }
     return nil;
 }
+
+
 
 @end

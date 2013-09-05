@@ -9,8 +9,6 @@
 #import "LCAppDelegate.h"
 #import "LCViewController.h"
 
-#import "User.h"
-
 @implementation LCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,9 +17,6 @@
                   clientKey:@"m6QHj2D9nn7JIuATsk28BKr2K66wFDHtU0SDf4Lk"];
     [Flurry startSession:@"DKZZ47WH5H6JM79Z4SYC"];
     [Flurry logEvent:@"user-opened-app"];
-    
-    // create a user object and set it's school to whatever is stored in NSUserDefaults
-    [[User sharedInstance] setSchool:@"umich"];
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

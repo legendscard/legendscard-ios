@@ -234,9 +234,7 @@
 }
 
 -(void)setUpView {
-    pCont = [[PerksController alloc]init];
-    pCont.delegate = self;
-    [pCont fetchEntries];
+    [self fetchData];
     
     JS7Button *mapBtn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
     [mapBtn setTitle:@"Map"];
@@ -256,6 +254,28 @@
     mySearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     [[[mySearchBar subviews] objectAtIndex:0] removeFromSuperview];
 
+}
+
+- (void)fetchData
+{
+    for (UIView *v in [self.view subviews]) {
+        if ([v isKindOfClass:[UIScrollView class]]) {
+            for (UIView *b in [v subviews]) {
+                if ([b isKindOfClass:[UIButton class]]) {
+                    UIButton *btn = (UIButton*)b;
+                    if ([btn.titleLabel.text isEqualToString:@"perk"]) {
+                        [btn removeFromSuperview];
+                        __strong UIButton *strongBtn = btn;
+                        strongBtn = nil;
+                    }
+                }
+
+            }
+        }
+    }
+    pCont = [[PerksController alloc]init];
+    pCont.delegate = self;
+    [pCont fetchEntries];
 }
 
 
@@ -303,6 +323,8 @@
         for (NSInteger col = 0; col < COLS; col++) {
             if (BASE + row * COLS + col - 1 < [allPerks count]) {
                 UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+                button.titleLabel.text = @"perk";
+                [button.titleLabel setHidden:YES];
                 button.layer.borderColor = [UIColor blackColor].CGColor;
                 button.layer.borderWidth = 1.0f;
                 button.frame = CGRectMake(defaultXpos, defaultYpos, SQUARE_SIZE, SQUARE_SIZE);

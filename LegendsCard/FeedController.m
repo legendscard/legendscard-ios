@@ -155,7 +155,7 @@
     [responseData resetBytesInRange:NSMakeRange(0,[responseData length])];
     NSString *url = nil;
     User *user = [User sharedInstance];
-    user.school = @"umich";
+
     if ([user.school isEqualToString:@"umich"]) {
         url = [NSString stringWithFormat:@"http://search.twitter.com/search.json?q=&ands=legendscard&phrase=&rpp=100"];
     }

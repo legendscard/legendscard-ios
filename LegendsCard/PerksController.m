@@ -44,8 +44,7 @@
     
     User *user = [User sharedInstance];
     school = user.school;
-    // default to Umich
-    school = @"umich";
+
     //URL where xml data is located
     //NSURL *url = [NSURL URLWithString:@"http://localhost/michigan.xml"];
     if([school isEqualToString:@"umich"]){

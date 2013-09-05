@@ -15,5 +15,6 @@
 @property BOOL cameFromHome;
 
 -(void)didRecieveXML:(NSMutableArray*)results;
+- (void)fetchData;
 
 @end

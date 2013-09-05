@@ -16,11 +16,12 @@
 #import "UILabel+ConfigureLabelText.h"
 #import "UIView+Animation.h"
 #import "Flurry.h"
-#import "UITextField+FigureOutSchool.h"
 #define KEYBOARD_UP_RATE 0.300000011920929
 #define LC_LOGO_NAME @"LC-logo"
 #define EMAIL_LOGIN_FB_ID @"0000"
 #define ALREADY_UPLOADED_TO_PARSE_KEY @"alreadyUploadedToParseKey"
+
+#define kNSUDSchoolCodeKey @"schoolCodeKey"
 
 #ifdef DEBUG
 #define MCRelease(x) [x release]

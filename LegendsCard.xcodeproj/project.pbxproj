@@ -35,10 +35,9 @@
 		03139C4817C5A6C200B4435E /* UIImageView+SetBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03139C4017C5A6C200B4435E /* UIImageView+SetBorder.m */; };
 		03139C4917C5A6C200B4435E /* UILabel+ConfigureLabelText.m in Sources */ = {isa = PBXBuildFile; fileRef = 03139C4217C5A6C200B4435E /* UILabel+ConfigureLabelText.m */; };
 		03139C4A17C5A6C200B4435E /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03139C4417C5A6C200B4435E /* UIView+Animation.m */; };
-		03139C4B17C5A6C200B4435E /* UITextField+FigureOutSchool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03139C4617C5A6C200B4435E /* UITextField+FigureOutSchool.m */; };
 		03139C4E17C5A6EF00B4435E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C4D17C5A6EF00B4435E /* QuartzCore.framework */; };
 		03139C5B17C5A70C00B4435E /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5017C5A70C00B4435E /* background@2x.png */; };
-		03139C5C17C5A70C00B4435E /* choose-school.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5117C5A70C00B4435E /* choose-school.png */; };
+		03139C5C17C5A70C00B4435E /* choose-school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5117C5A70C00B4435E /* choose-school@2x.png */; };
 		03139C5D17C5A70C00B4435E /* feed-pannel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5217C5A70C00B4435E /* feed-pannel@2x.png */; };
 		03139C5E17C5A70C00B4435E /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5317C5A70C00B4435E /* navbar@2x.png */; };
 		03139C5F17C5A70C00B4435E /* perks-pannel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5417C5A70C00B4435E /* perks-pannel@2x.png */; };
@@ -48,6 +47,10 @@
 		03139C6317C5A70C00B4435E /* segmented-control(middle)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5817C5A70C00B4435E /* segmented-control(middle)@2x.png */; };
 		03139C6417C5A70C00B4435E /* segmented-control(nofillavailable)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5917C5A70C00B4435E /* segmented-control(nofillavailable)@2x.png */; };
 		03139C6517C5A70C00B4435E /* segmented-control(nofillbusy)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5A17C5A70C00B4435E /* segmented-control(nofillbusy)@2x.png */; };
+		0341324017D8218D0020B287 /* LCChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */; };
+		0341324417D8258F0020B287 /* block-m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324117D8258F0020B287 /* block-m@2x.png */; };
+		0341324517D8258F0020B287 /* claremont@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324217D8258F0020B287 /* claremont@2x.png */; };
+		0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324317D8258F0020B287 /* IU-logo@2x.png */; };
 		03ECFC9C17C5AB5200EF52D5 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */; };
 		03ECFCA017C5ABB900EF52D5 /* PerksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9F17C5ABB900EF52D5 /* PerksController.m */; };
 		03ECFCA517C5ABDA00EF52D5 /* RSSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFCA217C5ABDA00EF52D5 /* RSSChannel.m */; };
@@ -141,11 +144,9 @@
 		03139C4217C5A6C200B4435E /* UILabel+ConfigureLabelText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ConfigureLabelText.m"; sourceTree = "<group>"; };
 		03139C4317C5A6C200B4435E /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		03139C4417C5A6C200B4435E /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
-		03139C4517C5A6C200B4435E /* UITextField+FigureOutSchool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+FigureOutSchool.h"; sourceTree = "<group>"; };
-		03139C4617C5A6C200B4435E /* UITextField+FigureOutSchool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FigureOutSchool.m"; sourceTree = "<group>"; };
 		03139C4D17C5A6EF00B4435E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		03139C5017C5A70C00B4435E /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
-		03139C5117C5A70C00B4435E /* choose-school.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose-school.png"; sourceTree = "<group>"; };
+		03139C5117C5A70C00B4435E /* choose-school@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose-school@2x.png"; sourceTree = "<group>"; };
 		03139C5217C5A70C00B4435E /* feed-pannel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feed-pannel@2x.png"; sourceTree = "<group>"; };
 		03139C5317C5A70C00B4435E /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 		03139C5417C5A70C00B4435E /* perks-pannel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perks-pannel@2x.png"; sourceTree = "<group>"; };
@@ -155,6 +156,11 @@
 		03139C5817C5A70C00B4435E /* segmented-control(middle)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-control(middle)@2x.png"; sourceTree = "<group>"; };
 		03139C5917C5A70C00B4435E /* segmented-control(nofillavailable)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-control(nofillavailable)@2x.png"; sourceTree = "<group>"; };
 		03139C5A17C5A70C00B4435E /* segmented-control(nofillbusy)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-control(nofillbusy)@2x.png"; sourceTree = "<group>"; };
+		0341323E17D8218D0020B287 /* LCChooseSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChooseSchoolViewController.h; sourceTree = "<group>"; };
+		0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChooseSchoolViewController.m; sourceTree = "<group>"; };
+		0341324117D8258F0020B287 /* block-m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-m@2x.png"; sourceTree = "<group>"; };
+		0341324217D8258F0020B287 /* claremont@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claremont@2x.png"; sourceTree = "<group>"; };
+		0341324317D8258F0020B287 /* IU-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IU-logo@2x.png"; sourceTree = "<group>"; };
 		03ECFC9A17C5AB5200EF52D5 /* PerksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksViewController.h; sourceTree = "<group>"; };
 		03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksViewController.m; sourceTree = "<group>"; };
 		03ECFC9E17C5ABB900EF52D5 /* PerksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksController.h; sourceTree = "<group>"; };
@@ -289,7 +295,6 @@
 		03139C0E17C5A60900B4435E = {
 			isa = PBXGroup;
 			children = (
-				03ECFD0517C5AEB900EF52D5 /* Accounts.framework */,
 				03139C2017C5A60900B4435E /* LegendsCard */,
 				03139C1917C5A60900B4435E /* Frameworks */,
 				03139C1817C5A60900B4435E /* Products */,
@@ -307,6 +312,7 @@
 		03139C1917C5A60900B4435E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03ECFD0517C5AEB900EF52D5 /* Accounts.framework */,
 				03ECFCDA17C5ACFA00EF52D5 /* Parse.framework */,
 				03ECFCD817C5ACE800EF52D5 /* libz.1.1.3.dylib */,
 				03ECFCD617C5ACE400EF52D5 /* libz.dylib */,
@@ -375,8 +381,6 @@
 				03139C4217C5A6C200B4435E /* UILabel+ConfigureLabelText.m */,
 				03139C4317C5A6C200B4435E /* UIView+Animation.h */,
 				03139C4417C5A6C200B4435E /* UIView+Animation.m */,
-				03139C4517C5A6C200B4435E /* UITextField+FigureOutSchool.h */,
-				03139C4617C5A6C200B4435E /* UITextField+FigureOutSchool.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -388,8 +392,7 @@
 				030F62CF17C5C19400904712 /* loadmore@2x.png */,
 				03ECFD2017C5B81600EF52D5 /* Back Button */,
 				03ECFD0717C5B2B700EF52D5 /* Map Pins */,
-				03139C5017C5A70C00B4435E /* background@2x.png */,
-				03139C5117C5A70C00B4435E /* choose-school.png */,
+				0341324717D8259A0020B287 /* Choose School */,
 				03139C5217C5A70C00B4435E /* feed-pannel@2x.png */,
 				03139C5417C5A70C00B4435E /* perks-pannel@2x.png */,
 				03139C5317C5A70C00B4435E /* navbar@2x.png */,
@@ -398,11 +401,25 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		0341324717D8259A0020B287 /* Choose School */ = {
+			isa = PBXGroup;
+			children = (
+				03139C5017C5A70C00B4435E /* background@2x.png */,
+				0341324117D8258F0020B287 /* block-m@2x.png */,
+				0341324217D8258F0020B287 /* claremont@2x.png */,
+				0341324317D8258F0020B287 /* IU-logo@2x.png */,
+				03139C5117C5A70C00B4435E /* choose-school@2x.png */,
+			);
+			name = "Choose School";
+			sourceTree = "<group>";
+		};
 		03ECFC9D17C5AB5700EF52D5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				03139C3217C5A60900B4435E /* LCViewController.h */,
 				03139C3317C5A60900B4435E /* LCViewController.m */,
+				0341323E17D8218D0020B287 /* LCChooseSchoolViewController.h */,
+				0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */,
 				03ECFCA717C5AC1E00EF52D5 /* SinglePerkViewController.h */,
 				03ECFCA817C5AC1E00EF52D5 /* SinglePerkViewController.m */,
 				03ECFCA917C5AC1E00EF52D5 /* SinglePerkViewController.xib */,
@@ -583,7 +600,7 @@
 				03139C2F17C5A60900B4435E /* Default@2x.png in Resources */,
 				03139C3117C5A60900B4435E /* Default-568h@2x.png in Resources */,
 				03139C5B17C5A70C00B4435E /* background@2x.png in Resources */,
-				03139C5C17C5A70C00B4435E /* choose-school.png in Resources */,
+				03139C5C17C5A70C00B4435E /* choose-school@2x.png in Resources */,
 				03139C5D17C5A70C00B4435E /* feed-pannel@2x.png in Resources */,
 				03139C5E17C5A70C00B4435E /* navbar@2x.png in Resources */,
 				03139C5F17C5A70C00B4435E /* perks-pannel@2x.png in Resources */,
@@ -620,6 +637,9 @@
 				030F62D017C5C19400904712 /* loadmore@2x.png in Resources */,
 				030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */,
 				03123F7717C5C5A000715FFC /* back-button@2x.png in Resources */,
+				0341324417D8258F0020B287 /* block-m@2x.png in Resources */,
+				0341324517D8258F0020B287 /* claremont@2x.png in Resources */,
+				0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +657,6 @@
 				03139C4817C5A6C200B4435E /* UIImageView+SetBorder.m in Sources */,
 				03139C4917C5A6C200B4435E /* UILabel+ConfigureLabelText.m in Sources */,
 				03139C4A17C5A6C200B4435E /* UIView+Animation.m in Sources */,
-				03139C4B17C5A6C200B4435E /* UITextField+FigureOutSchool.m in Sources */,
 				03ECFC9C17C5AB5200EF52D5 /* PerksViewController.m in Sources */,
 				03ECFCA017C5ABB900EF52D5 /* PerksController.m in Sources */,
 				03ECFCA517C5ABDA00EF52D5 /* RSSChannel.m in Sources */,
@@ -659,6 +678,7 @@
 				03ECFD1B17C5B44700EF52D5 /* JS7Button.m in Sources */,
 				030F62B817C5BF5500904712 /* FeedViewController.m in Sources */,
 				030F62CE17C5C01E00904712 /* EGORefreshTableHeaderView.m in Sources */,
+				0341324017D8218D0020B287 /* LCChooseSchoolViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

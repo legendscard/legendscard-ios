@@ -13,6 +13,7 @@
 {}
 
 - (void)showTheHud;
+- (void)fetchData;
 
 /* a reference to the FeedController so that the home view controller can begin the loading process early */
 @property (strong, nonatomic) FeedController *feedCont;
