@@ -56,17 +56,15 @@ static const NSInteger kPerksButtonTag = 2;
     
     self.chooseSchoolVC = [[LCChooseSchoolViewController alloc]init];
     
-    __weak typeof(self) weakSelf = self;
-    [self.chooseSchoolVC setBlock:^{
-        [weakSelf.feedViewController fetchData];
-        [weakSelf.perksViewController fetchData];
-    }];
-    
-    
+//    __weak typeof(self) weakSelf = self;
+//    [self.chooseSchoolVC setBlock:^{
+//        [weakSelf.feedViewController fetchData];
+//        [weakSelf.perksViewController fetchData];
+//    }];
     
     [self setupButtons];
     [self createViewControllers];
-    [self createChooseSchoolButton];
+//    [self createChooseSchoolButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -175,7 +173,7 @@ static const NSInteger kPerksButtonTag = 2;
 
 - (void)createChooseSchoolButton
 {
-    static CGFloat btnHeight = 30., btnWidth = 100.;
+    static CGFloat btnHeight = 40., btnWidth = 100.;
     self.chooseSchoolButton = [[JS7Button alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - btnHeight, btnWidth, btnHeight)];
     [self.chooseSchoolButton setTitle:@"Choose School"];
     [self.chooseSchoolButton setBackgroundColor:[UIColor colorWithWhite:0. alpha:0.7]];

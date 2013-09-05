@@ -51,6 +51,7 @@
 		0341324417D8258F0020B287 /* block-m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324117D8258F0020B287 /* block-m@2x.png */; };
 		0341324517D8258F0020B287 /* claremont@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324217D8258F0020B287 /* claremont@2x.png */; };
 		0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324317D8258F0020B287 /* IU-logo@2x.png */; };
+		0341324917D837190020B287 /* lcv3.0-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324817D837190020B287 /* lcv3.0-icon@2x.png */; };
 		03ECFC9C17C5AB5200EF52D5 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */; };
 		03ECFCA017C5ABB900EF52D5 /* PerksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9F17C5ABB900EF52D5 /* PerksController.m */; };
 		03ECFCA517C5ABDA00EF52D5 /* RSSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFCA217C5ABDA00EF52D5 /* RSSChannel.m */; };
@@ -161,6 +162,7 @@
 		0341324117D8258F0020B287 /* block-m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-m@2x.png"; sourceTree = "<group>"; };
 		0341324217D8258F0020B287 /* claremont@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claremont@2x.png"; sourceTree = "<group>"; };
 		0341324317D8258F0020B287 /* IU-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IU-logo@2x.png"; sourceTree = "<group>"; };
+		0341324817D837190020B287 /* lcv3.0-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lcv3.0-icon@2x.png"; sourceTree = "<group>"; };
 		03ECFC9A17C5AB5200EF52D5 /* PerksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksViewController.h; sourceTree = "<group>"; };
 		03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksViewController.m; sourceTree = "<group>"; };
 		03ECFC9E17C5ABB900EF52D5 /* PerksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksController.h; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		03139C0E17C5A60900B4435E = {
 			isa = PBXGroup;
 			children = (
+				0341324817D837190020B287 /* lcv3.0-icon@2x.png */,
 				03139C2017C5A60900B4435E /* LegendsCard */,
 				03139C1917C5A60900B4435E /* Frameworks */,
 				03139C1817C5A60900B4435E /* Products */,
@@ -640,6 +643,7 @@
 				0341324417D8258F0020B287 /* block-m@2x.png in Resources */,
 				0341324517D8258F0020B287 /* claremont@2x.png in Resources */,
 				0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */,
+				0341324917D837190020B287 /* lcv3.0-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

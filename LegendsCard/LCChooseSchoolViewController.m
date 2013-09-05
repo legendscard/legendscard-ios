@@ -20,6 +20,14 @@
 
 @implementation LCChooseSchoolViewController
 
+- (id)init
+{
+    if (self = [super init]) {
+        self.block = nil;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
