@@ -14,6 +14,8 @@
 #import "LCChooseSchoolViewController.h"
 #import "User.h"
 
+#define IS_IPHONE_5 [UIScreen mainScreen].bounds.size.height == 568.0f
+
 typedef void(^AnimationCompletionBlock)(BOOL finished);
 
 static const NSInteger kFeedButtonTag = 1;
@@ -95,7 +97,12 @@ static const NSInteger kPerksButtonTag = 2;
     
     UIButton *feed = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width/2 - buffer, self.view.frame.size.height)];
     feed.tag = kFeedButtonTag;
-    [feed setBackgroundImage:[UIImage imageNamed:@"feed-pannel"] forState:UIControlStateNormal];
+    
+    if (IS_IPHONE_5)
+        [feed setBackgroundImage:[UIImage imageNamed:@"feed-pannel-i5"] forState:UIControlStateNormal];
+    else
+        [feed setBackgroundImage:[UIImage imageNamed:@"feed-pannel-i4"] forState:UIControlStateNormal];
+    
     [self.view addSubview:feed];
     // add the label
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, feed.frame.size.width, 200)];
@@ -105,7 +112,12 @@ static const NSInteger kPerksButtonTag = 2;
     
     UIButton *perks = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 + buffer, 0, self.view.frame.size.width/2 - buffer, self.view.frame.size.height)];
     perks.tag = kPerksButtonTag;
-    [perks setBackgroundImage:[UIImage imageNamed:@"perks-pannel"] forState:UIControlStateNormal];
+    
+    if (IS_IPHONE_5)
+        [perks setBackgroundImage:[UIImage imageNamed:@"perks-pannel-i5"] forState:UIControlStateNormal];
+    else
+        [perks setBackgroundImage:[UIImage imageNamed:@"perks-pannel-i4"] forState:UIControlStateNormal];
+    
     [self.view addSubview:perks];
     // add label
     UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(0, perks.frame.size.height - 20 - 200, perks.frame.size.width, 200)];
