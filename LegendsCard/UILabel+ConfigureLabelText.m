@@ -13,9 +13,9 @@
 -(void)configurePerkLabel {
     self.backgroundColor = [UIColor clearColor];
     self.numberOfLines = 2;
-    self.lineBreakMode = UILineBreakModeWordWrap;
+    self.lineBreakMode = NSLineBreakByWordWrapping;;
     self.textColor = [UIColor whiteColor];
-    self.textAlignment = UITextAlignmentCenter;
+    self.textAlignment = NSTextAlignmentCenter;
     self.minimumFontSize = 2;
     if ([self.text length] >= 20) {
         self.font = [UIFont fontWithName:@"GillSans" size:10.0f];
