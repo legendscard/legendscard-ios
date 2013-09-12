@@ -8,7 +8,6 @@
 
 #import "PerksViewController.h"
 #import "SinglePerkViewController.h"
-#import "MBProgressHUD.h"
 #import "MapAllViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIImageView+SetBorder.h"
@@ -16,6 +15,7 @@
 #import "UIView+Animation.h"
 #import "CacheController.h"
 #import "JS7Button.h"
+#import "SVProgressHUD.h"
 
 #define BUFFER_ZONE 16
 #define SQUARE_SIZE 86
@@ -36,7 +36,6 @@
 @property (strong, nonatomic) NSArray *ALLPERKS;
 @property (strong, nonatomic) NSArray *viewablePerks;
 @property (strong, nonatomic) NSMutableArray *filteredALLPERKS;
-@property (strong, nonatomic) MBProgressHUD *hud;
 @property (strong, nonatomic) UISearchBar *mySearchBar;
 @property (strong, nonatomic) UIActivityIndicatorView *act2;
 @property (strong, nonatomic) CacheController *assets;
@@ -53,7 +52,6 @@
 @synthesize scrollView, pCont;
 @synthesize ALLPERKS;
 @synthesize filteredALLPERKS;
-@synthesize hud;
 @synthesize mySearchBar;
 @synthesize act2;
 @synthesize assets, myView;
@@ -93,10 +91,7 @@
 
     //Show the hud
     
-    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    self.hud.labelText = @"Loading Perks";
-    self.hud.mode = MBProgressHUDModeIndeterminate;
-    self.hud.dimBackground = YES;
+    [SVProgressHUD showWithStatus:@"Loading Perks" maskType:SVProgressHUDMaskTypeGradient];
     
     self.assets = [[CacheController alloc]init];
     self.ESLButtons = [[NSMutableArray alloc]initWithCapacity:4];
@@ -280,7 +275,7 @@
 
 
 -(void)didRecieveXML:(NSMutableArray*)results {
-    [self.hud hide:YES];
+    [SVProgressHUD dismiss];
     NSLog(@"Recieved xml");
     ALLPERKS = results;
     

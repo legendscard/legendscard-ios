@@ -8,7 +8,7 @@
 
 #import "FeedViewController.h"
 #import "FeedPost.h"
-#import "MBProgressHUD.h"
+#import "SVProgressHUD.h"
 #import "NSBundle+LoadNib.h"
 #import "CacheController.h"
 #import "EGORefreshTableHeaderView.h"
@@ -64,7 +64,6 @@
 
 /* UI elements */
 @property IBOutlet UITableView *tableView;
-@property (strong, nonatomic) MBProgressHUD *hud, *loadLinkHud;
 @property (strong, nonatomic) UIBarButtonItem *refreshButton;
 @property (strong, nonatomic) UIActivityIndicatorView *refreshAct;
 @property (strong, nonatomic) UIBarButtonItem *refreshActButton;
@@ -80,7 +79,6 @@
 
 @synthesize feedCont;
 @synthesize allTweets, sortedArray;
-@synthesize hud, loadLinkHud;
 @synthesize tableView = _tableView;
 @synthesize defaultFeedPosts;
 @synthesize didReceiveFirstDataSet;
@@ -199,10 +197,7 @@
 -(void)showTheHud
 {
     if (sortedArray == nil || [sortedArray count] ==  0) {
-        self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        self.hud.labelText = @"Loading Feed";
-        self.hud.mode = MBProgressHUDModeIndeterminate;
-        self.hud.dimBackground = YES;
+        [SVProgressHUD showWithStatus:@"Loading Feed" maskType:SVProgressHUDMaskTypeGradient];
     }
 }
 
@@ -485,7 +480,7 @@
     
     self.tableView.scrollEnabled = YES;
     [self.tableView reloadData];
-    [self.hud hide:YES];
+    [SVProgressHUD dismiss];
     [self doneLoadingTableViewData];
     //self.refreshButton.enabled = YES;
     //self.navigationItem.rightBarButtonItem = self.refreshButton;
