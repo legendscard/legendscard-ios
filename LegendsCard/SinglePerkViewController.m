@@ -8,7 +8,6 @@
 
 #import "SinglePerkViewController.h"
 #import "MapViewController.h"
-#import "MBProgressHUD.h"
 #import "CacheController.h"
 
 @interface SinglePerkViewController ()
