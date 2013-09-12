@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class LCViewController;
+@class LCHomeViewController;
 
 @interface LCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) LCViewController *viewController;
+@property (strong, nonatomic) LCHomeViewController *viewController;
 
 @end

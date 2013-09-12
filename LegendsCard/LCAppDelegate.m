@@ -7,7 +7,7 @@
 //
 
 #import "LCAppDelegate.h"
-#import "LCViewController.h"
+#import "LCHomeViewController.h"
 
 @implementation LCAppDelegate
 
@@ -21,7 +21,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[LCViewController alloc] init];
+    self.viewController = [[LCHomeViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

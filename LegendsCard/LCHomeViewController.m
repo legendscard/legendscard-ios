@@ -1,12 +1,12 @@
 //
-//  LCViewController.m
+//  LCHomeViewController.m
 //  LegendsCard
 //
 //  Created by Josh Sklar on 8/21/13.
 //  Copyright (c) 2013 LegendsCard. All rights reserved.
 //
 
-#import "LCViewController.h"
+#import "LCHomeViewController.h"
 #import "UIView+Animation.h"
 #import "PerksViewController.h"
 #import "FeedViewController.h"
@@ -19,7 +19,7 @@ typedef void(^AnimationCompletionBlock)(BOOL finished);
 static const NSInteger kFeedButtonTag = 1;
 static const NSInteger kPerksButtonTag = 2;
 
-@interface LCViewController ()
+@interface LCHomeViewController ()
 
 @property (strong, nonatomic) UIButton *feedButton, *perksButton;
 
@@ -47,7 +47,7 @@ static const NSInteger kPerksButtonTag = 2;
 
 @end
 
-@implementation LCViewController
+@implementation LCHomeViewController
 
 - (void)viewDidLoad
 {

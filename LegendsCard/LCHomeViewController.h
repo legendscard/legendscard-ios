@@ -1,5 +1,5 @@
 //
-//  LCViewController.h
+//  LCHomeViewController.h
 //  LegendsCard
 //
 //  Created by Josh Sklar on 8/21/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCViewController : UIViewController
+@interface LCHomeViewController : UIViewController
 
 @end

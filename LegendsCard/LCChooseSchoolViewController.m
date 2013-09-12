@@ -47,10 +47,10 @@
     [self.view addSubview:cs];
     
     static CGFloat btnSize = 100.;
-    CGFloat buffer = 40.;
+    CGFloat buffer = 80.;
     
     if ([UIScreen mainScreen].bounds.size.height == 480.) // iPhone 4
-        buffer = 20.;
+        buffer = 60.;
     
     CGFloat originX = self.view.frame.size.width/2. - btnSize/2.;
     
@@ -62,11 +62,11 @@
     [claremont setTag:1];
     [claremont setBackgroundImage:[UIImage imageNamed:@"claremont"] forState:UIControlStateNormal];
     
-    UIButton *iu = [[UIButton alloc]initWithFrame:CGRectMake(originX, [claremont getPositionOfBottom] + buffer, btnSize, btnSize)];
-    [iu setTag:2];
-    [iu setBackgroundImage:[UIImage imageNamed:@"IU-logo"] forState:UIControlStateNormal];
+//    UIButton *iu = [[UIButton alloc]initWithFrame:CGRectMake(originX, [claremont getPositionOfBottom] + buffer, btnSize, btnSize)];
+//    [iu setTag:2];
+//    [iu setBackgroundImage:[UIImage imageNamed:@"IU-logo"] forState:UIControlStateNormal];
     
-    for (UIButton *b in @[mich, claremont, iu]) {
+    for (UIButton *b in @[mich, claremont]) {
         [b addTarget:self action:@selector(didTapBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:b];
     }
