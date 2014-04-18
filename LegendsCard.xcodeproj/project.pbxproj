@@ -45,7 +45,6 @@
 		03139C4A17C5A6C200B4435E /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03139C4417C5A6C200B4435E /* UIView+Animation.m */; };
 		03139C4E17C5A6EF00B4435E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C4D17C5A6EF00B4435E /* QuartzCore.framework */; };
 		03139C5B17C5A70C00B4435E /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5017C5A70C00B4435E /* background@2x.png */; };
-		03139C5C17C5A70C00B4435E /* choose-school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5117C5A70C00B4435E /* choose-school@2x.png */; };
 		03139C5E17C5A70C00B4435E /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03139C5317C5A70C00B4435E /* navbar@2x.png */; };
 		0341324017D8218D0020B287 /* LCChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */; };
 		0341324417D8258F0020B287 /* block-m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324117D8258F0020B287 /* block-m@2x.png */; };
@@ -155,7 +154,6 @@
 		03139C4417C5A6C200B4435E /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		03139C4D17C5A6EF00B4435E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		03139C5017C5A70C00B4435E /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
-		03139C5117C5A70C00B4435E /* choose-school@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose-school@2x.png"; sourceTree = "<group>"; };
 		03139C5317C5A70C00B4435E /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 		0341323E17D8218D0020B287 /* LCChooseSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChooseSchoolViewController.h; sourceTree = "<group>"; };
 		0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChooseSchoolViewController.m; sourceTree = "<group>"; };
@@ -416,7 +414,6 @@
 				0341324117D8258F0020B287 /* block-m@2x.png */,
 				0341324217D8258F0020B287 /* claremont@2x.png */,
 				0341324317D8258F0020B287 /* IU-logo@2x.png */,
-				03139C5117C5A70C00B4435E /* choose-school@2x.png */,
 			);
 			name = "Choose School";
 			sourceTree = "<group>";
@@ -600,7 +597,6 @@
 				03139C2F17C5A60900B4435E /* Default@2x.png in Resources */,
 				03139C3117C5A60900B4435E /* Default-568h@2x.png in Resources */,
 				03139C5B17C5A70C00B4435E /* background@2x.png in Resources */,
-				03139C5C17C5A70C00B4435E /* choose-school@2x.png in Resources */,
 				03139C5E17C5A70C00B4435E /* navbar@2x.png in Resources */,
 				03ECFCAB17C5AC1E00EF52D5 /* SinglePerkViewController.xib in Resources */,
 				03ECFCB917C5AC3900EF52D5 /* FeedTableCell.xib in Resources */,
