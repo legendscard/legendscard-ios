@@ -48,7 +48,6 @@
 		0341324017D8218D0020B287 /* LCChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */; };
 		0341324417D8258F0020B287 /* block-m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324117D8258F0020B287 /* block-m@2x.png */; };
 		0341324517D8258F0020B287 /* claremont@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324217D8258F0020B287 /* claremont@2x.png */; };
-		0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324317D8258F0020B287 /* IU-logo@2x.png */; };
 		0341324917D837190020B287 /* lcv3.0-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324817D837190020B287 /* lcv3.0-icon@2x.png */; };
 		03A9C49C19A446E100494CDE /* UIFont+LCFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9C49B19A446E100494CDE /* UIFont+LCFont.m */; };
 		03ECFC9C17C5AB5200EF52D5 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */; };
@@ -158,7 +157,6 @@
 		0341323F17D8218D0020B287 /* LCChooseSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChooseSchoolViewController.m; sourceTree = "<group>"; };
 		0341324117D8258F0020B287 /* block-m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-m@2x.png"; sourceTree = "<group>"; };
 		0341324217D8258F0020B287 /* claremont@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claremont@2x.png"; sourceTree = "<group>"; };
-		0341324317D8258F0020B287 /* IU-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IU-logo@2x.png"; sourceTree = "<group>"; };
 		0341324817D837190020B287 /* lcv3.0-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lcv3.0-icon@2x.png"; sourceTree = "<group>"; };
 		03A9C49A19A446E100494CDE /* UIFont+LCFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+LCFont.h"; path = "Supporting Files/Categories/UIFont+LCFont.h"; sourceTree = "<group>"; };
 		03A9C49B19A446E100494CDE /* UIFont+LCFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+LCFont.m"; path = "Supporting Files/Categories/UIFont+LCFont.m"; sourceTree = "<group>"; };
@@ -416,7 +414,6 @@
 				03139C5017C5A70C00B4435E /* background@2x.png */,
 				0341324117D8258F0020B287 /* block-m@2x.png */,
 				0341324217D8258F0020B287 /* claremont@2x.png */,
-				0341324317D8258F0020B287 /* IU-logo@2x.png */,
 			);
 			name = "Choose School";
 			sourceTree = "<group>";
@@ -628,7 +625,6 @@
 				030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */,
 				0341324417D8258F0020B287 /* block-m@2x.png in Resources */,
 				0341324517D8258F0020B287 /* claremont@2x.png in Resources */,
-				0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */,
 				0341324917D837190020B287 /* lcv3.0-icon@2x.png in Resources */,
 				0310F7AE17E147BB0065C384 /* LC-logo-wide.png in Resources */,
 				0310F7B117E14FAB0065C384 /* feed-pannel-i4@2x.png in Resources */,
