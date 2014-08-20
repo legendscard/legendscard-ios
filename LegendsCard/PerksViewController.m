@@ -19,7 +19,7 @@
 
 #define BUFFER_ZONE 16
 #define SQUARE_SIZE 86
-#define SEARCH_BAR_BUFFER 8
+#define SEARCH_BAR_BUFFER 5
 
 #define EAT_TYPE @"1"
 #define SHOP_TYPE @"2"
@@ -236,16 +236,9 @@
     self.navigationItem.rightBarButtonItem = mapButton;
     
     mySearchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0 + SEARCH_BAR_BUFFER, 320, 40)];
-    for(int i =0; i<[mySearchBar.subviews count]; i++) {
-        if([[mySearchBar.subviews objectAtIndex:i] isKindOfClass:[UITextField class]])
-            [(UITextField*)[mySearchBar.subviews objectAtIndex:i] setFont:[UIFont fontWithName:@"GillSans" size:15]];
-    }
-    
     mySearchBar.delegate = self;
     mySearchBar.placeholder = @"Search #perks";
     mySearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
-    [[[mySearchBar subviews] objectAtIndex:0] removeFromSuperview];
-
 }
 
 - (void)fetchData
