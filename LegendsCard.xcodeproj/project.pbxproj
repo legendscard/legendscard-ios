@@ -28,7 +28,6 @@
 		0310F7BA17E1525E0065C384 /* lcv3.0-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0310F7B917E1525E0065C384 /* lcv3.0-icon.png */; };
 		0310F7BE17E157240065C384 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0310F7BB17E157230065C384 /* SVProgressHUD.bundle */; };
 		0310F7BF17E157240065C384 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310F7BD17E157240065C384 /* SVProgressHUD.m */; };
-		03123F7717C5C5A000715FFC /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03123F7617C5C5A000715FFC /* back-button@2x.png */; };
 		03139C1B17C5A60900B4435E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1A17C5A60900B4435E /* UIKit.framework */; };
 		03139C1D17C5A60900B4435E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1C17C5A60900B4435E /* Foundation.framework */; };
 		03139C1F17C5A60900B4435E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03139C1E17C5A60900B4435E /* CoreGraphics.framework */; };
@@ -129,7 +128,6 @@
 		0310F7BB17E157230065C384 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		0310F7BC17E157230065C384 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		0310F7BD17E157240065C384 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		03123F7617C5C5A000715FFC /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
 		03139C1717C5A60900B4435E /* LegendsCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegendsCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03139C1A17C5A60900B4435E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03139C1C17C5A60900B4435E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -540,7 +538,6 @@
 		03ECFD2017C5B81600EF52D5 /* Back Button */ = {
 			isa = PBXGroup;
 			children = (
-				03123F7617C5C5A000715FFC /* back-button@2x.png */,
 			);
 			name = "Back Button";
 			sourceTree = "<group>";
@@ -629,7 +626,6 @@
 				030F62CD17C5C01E00904712 /* whiteArrow@2x.png in Resources */,
 				030F62D017C5C19400904712 /* loadmore@2x.png in Resources */,
 				030F62D217C5C2A500904712 /* Cubano-Regular.otf in Resources */,
-				03123F7717C5C5A000715FFC /* back-button@2x.png in Resources */,
 				0341324417D8258F0020B287 /* block-m@2x.png in Resources */,
 				0341324517D8258F0020B287 /* claremont@2x.png in Resources */,
 				0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */,
