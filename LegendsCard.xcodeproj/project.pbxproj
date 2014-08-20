@@ -766,6 +766,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LegendsCard/LegendsCard-Prefix.pch";
 				INFOPLIST_FILE = "LegendsCard/LegendsCard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/LegendsCard\"",
@@ -789,6 +790,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LegendsCard/LegendsCard-Prefix.pch";
 				INFOPLIST_FILE = "LegendsCard/LegendsCard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/LegendsCard\"",
