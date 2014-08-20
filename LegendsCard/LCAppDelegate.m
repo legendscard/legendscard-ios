@@ -8,6 +8,7 @@
 
 #import "LCAppDelegate.h"
 #import "LCHomeViewController.h"
+#import "UIFont+LCFont.h"
 
 @implementation LCAppDelegate
 
@@ -21,6 +22,22 @@
     
     [[UIApplication sharedApplication]
      setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    // Set global UINavigationBar and UIBarButtonItem appearance properties
+    if ([[UINavigationBar class] respondsToSelector:@selector(appearance)]) {
+        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                              [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                              [UIFont LC_helveticaLightWithSize:22], NSFontAttributeName,
+                                                              nil]];
+    }
+    
+    if ([[UIBarButtonItem class] respondsToSelector:@selector(appearance)]) {
+        [[UIBarButtonItem appearance] setTitleTextAttributes:@{
+                                                               NSFontAttributeName: [UIFont LC_helveticaLightWithSize:18],
+                                                               NSForegroundColorAttributeName: [UIColor whiteColor]
+                                                               }
+                                                    forState:UIControlStateNormal];
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

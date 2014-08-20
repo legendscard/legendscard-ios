@@ -13,6 +13,7 @@
 #import "JS7Button.h"
 #import "LCChooseSchoolViewController.h"
 #import "User.h"
+#import "UIFont+LCFont.h"
 
 #define IS_IPHONE_5 [UIScreen mainScreen].bounds.size.height == 568.0f
 
@@ -161,17 +162,13 @@ static const NSInteger kPerksButtonTag = 2;
     self.feedNavController = [[UINavigationController alloc]initWithRootViewController:self.feedViewController];
     
     for (UIViewController *viewController in @[self.perksViewController, self.feedViewController]) {
-        JS7Button *btn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
-        [btn setTitle:@"Back" forState:UIControlStateNormal];
-        
-        [btn performBlockOnTouchUpInside:^(id sender) {
-            [self resetMainViewController];
-            [self animateButtonsOnScreen];
-        }];
-        
-        [btn setTextColor:[UIColor whiteColor] highlightedTextColor:[UIColor grayColor]];
-        UIBarButtonItem *bbI = [[UIBarButtonItem alloc]initWithCustomView:btn];
-        viewController.navigationItem.leftBarButtonItem = bbI;
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                       initWithTitle:@"Back"
+                                       style:UIBarButtonItemStylePlain
+                                       target:self
+                                       action:@selector(didTapBackButtonOnNavigationBar:)];
+
+        viewController.navigationItem.leftBarButtonItem = backButton;
     }
     
     [self formatNavControllers];
@@ -196,14 +193,13 @@ static const NSInteger kPerksButtonTag = 2;
     for (UINavigationController *navController in @[self.perksNavController, self.feedNavController]) {
         navController.navigationBar.barTintColor = [UIColor lightGrayColor];
         navController.navigationBar.translucent = NO;
-        
-        if ([[UINavigationBar class] respondsToSelector:@selector(appearance)]) {
-        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                              [UIColor whiteColor], NSForegroundColorAttributeName,
-                                                              [UIFont fontWithName:@"Helvetica-Light" size:22], NSFontAttributeName,
-                                                              nil]];
-        }
     }
+}
+
+- (void)didTapBackButtonOnNavigationBar:(id)sender
+{
+    [self resetMainViewController];
+    [self animateButtonsOnScreen];
 }
 
 - (void)didTapButton:(id)sender
