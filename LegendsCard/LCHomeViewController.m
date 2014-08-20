@@ -193,6 +193,7 @@ static const NSInteger kPerksButtonTag = 2;
     for (UINavigationController *navController in @[self.perksNavController, self.feedNavController]) {
         navController.navigationBar.barTintColor = [UIColor lightGrayColor];
         navController.navigationBar.translucent = NO;
+        navController.navigationBar.tintColor = [UIColor whiteColor];
     }
 }
 

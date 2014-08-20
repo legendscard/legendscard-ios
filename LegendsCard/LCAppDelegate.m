@@ -41,8 +41,6 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.window.tintColor = [UIColor whiteColor];
-    
     // Override point for customization after application launch.
     self.viewController = [[LCHomeViewController alloc] init];
     self.window.rootViewController = self.viewController;
