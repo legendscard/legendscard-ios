@@ -51,6 +51,7 @@
 		0341324517D8258F0020B287 /* claremont@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324217D8258F0020B287 /* claremont@2x.png */; };
 		0341324617D8258F0020B287 /* IU-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324317D8258F0020B287 /* IU-logo@2x.png */; };
 		0341324917D837190020B287 /* lcv3.0-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324817D837190020B287 /* lcv3.0-icon@2x.png */; };
+		03A9C49C19A446E100494CDE /* UIFont+LCFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9C49B19A446E100494CDE /* UIFont+LCFont.m */; };
 		03ECFC9C17C5AB5200EF52D5 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */; };
 		03ECFCA017C5ABB900EF52D5 /* PerksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9F17C5ABB900EF52D5 /* PerksController.m */; };
 		03ECFCA517C5ABDA00EF52D5 /* RSSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFCA217C5ABDA00EF52D5 /* RSSChannel.m */; };
@@ -161,6 +162,8 @@
 		0341324217D8258F0020B287 /* claremont@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claremont@2x.png"; sourceTree = "<group>"; };
 		0341324317D8258F0020B287 /* IU-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IU-logo@2x.png"; sourceTree = "<group>"; };
 		0341324817D837190020B287 /* lcv3.0-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lcv3.0-icon@2x.png"; sourceTree = "<group>"; };
+		03A9C49A19A446E100494CDE /* UIFont+LCFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+LCFont.h"; path = "Supporting Files/Categories/UIFont+LCFont.h"; sourceTree = "<group>"; };
+		03A9C49B19A446E100494CDE /* UIFont+LCFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+LCFont.m"; path = "Supporting Files/Categories/UIFont+LCFont.m"; sourceTree = "<group>"; };
 		03ECFC9A17C5AB5200EF52D5 /* PerksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksViewController.h; sourceTree = "<group>"; };
 		03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksViewController.m; sourceTree = "<group>"; };
 		03ECFC9E17C5ABB900EF52D5 /* PerksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksController.h; sourceTree = "<group>"; };
@@ -384,6 +387,8 @@
 				03139C4217C5A6C200B4435E /* UILabel+ConfigureLabelText.m */,
 				03139C4317C5A6C200B4435E /* UIView+Animation.h */,
 				03139C4417C5A6C200B4435E /* UIView+Animation.m */,
+				03A9C49A19A446E100494CDE /* UIFont+LCFont.h */,
+				03A9C49B19A446E100494CDE /* UIFont+LCFont.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -660,6 +665,7 @@
 				03ECFCAA17C5AC1E00EF52D5 /* SinglePerkViewController.m in Sources */,
 				03ECFCB517C5AC3900EF52D5 /* FeedPostsCache.m in Sources */,
 				03ECFCB617C5AC3900EF52D5 /* FeedPost.m in Sources */,
+				03A9C49C19A446E100494CDE /* UIFont+LCFont.m in Sources */,
 				03ECFCB717C5AC3900EF52D5 /* User.m in Sources */,
 				03ECFCB817C5AC3900EF52D5 /* FeedTableCell.m in Sources */,
 				03ECFCE717C5AD6000EF52D5 /* iCodeBlogAnnotation.m in Sources */,
