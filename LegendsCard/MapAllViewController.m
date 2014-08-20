@@ -56,12 +56,6 @@
     [self fetchEntries];
     UIBarButtonItem *locate = [[UIBarButtonItem alloc] initWithTitle:@"Find Me" style:UIBarButtonItemStylePlain target:self action:@selector(findMe)];
     [[self navigationItem] setRightBarButtonItem:locate];
-    
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [btn setImage:[UIImage imageNamed:@"back-button"] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *backBtn = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.leftBarButtonItem = backBtn;
 }
 
 - (void)goBack
