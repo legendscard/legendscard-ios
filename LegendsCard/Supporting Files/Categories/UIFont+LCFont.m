@@ -10,4 +10,10 @@
 
 @implementation UIFont (LCFont)
 
++ (UIFont *)LC_helveticaLightWithSize:(CGFloat)size
+{
+    return [UIFont fontWithName:@"Helvetica-Light"
+                           size:size];
+}
+
 @end

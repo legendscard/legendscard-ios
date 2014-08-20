@@ -10,4 +10,6 @@
 
 @interface UIFont (LCFont)
 
++ (UIFont *)LC_helveticaLightWithSize:(CGFloat)size;
+
 @end
