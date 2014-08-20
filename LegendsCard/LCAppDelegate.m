@@ -19,6 +19,9 @@
     [Flurry logEvent:@"user-opened-app"];
     
     
+    [[UIApplication sharedApplication]
+     setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[LCHomeViewController alloc] init];
