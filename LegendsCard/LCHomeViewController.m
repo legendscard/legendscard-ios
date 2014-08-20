@@ -193,21 +193,17 @@ static const NSInteger kPerksButtonTag = 2;
 
 - (void)formatNavControllers
 {
-    for (UINavigationController *navController in @[self.perksNavController, self.feedNavController])
-        [navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
-    
-    if ([[UINavigationBar class] respondsToSelector:@selector(appearance)])
-    {
-        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                              [UIColor whiteColor], UITextAttributeTextColor,
-                                                              [UIColor clearColor], UITextAttributeTextShadowColor,
-                                                              [NSValue valueWithUIOffset:UIOffsetMake(1, 0)], UITextAttributeTextShadowOffset,
-                                                              [UIFont fontWithName:@"Helvetica-Light" size:22], UITextAttributeFont,
-                                                              nil]];
+    for (UINavigationController *navController in @[self.perksNavController, self.feedNavController]) {
+        navController.navigationBar.barTintColor = [UIColor lightGrayColor];
+        navController.navigationBar.translucent = NO;
         
-        [[UINavigationBar appearance]setShadowImage:[[UIImage alloc] init]];
+        if ([[UINavigationBar class] respondsToSelector:@selector(appearance)]) {
+        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                              [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                              [UIFont fontWithName:@"Helvetica-Light" size:22], NSFontAttributeName,
+                                                              nil]];
+        }
     }
-    
 }
 
 - (void)didTapButton:(id)sender
