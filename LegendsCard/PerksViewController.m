@@ -74,10 +74,6 @@
 
 //caching assumes photos never change
 
--(void)goBack {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

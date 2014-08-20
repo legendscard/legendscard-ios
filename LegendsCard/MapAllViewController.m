@@ -58,11 +58,6 @@
     [[self navigationItem] setRightBarButtonItem:locate];
 }
 
-- (void)goBack
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 -(void)findMe{
     [mapView setRegion:MKCoordinateRegionMake(loc, MKCoordinateSpanMake(.01, .01)) animated:YES]; 
     [mapView setShowsUserLocation:YES];
