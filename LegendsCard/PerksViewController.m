@@ -399,9 +399,8 @@
     perk.item = [self.viewablePerks objectAtIndex:btn.tag-1];
     perk.title = [[self.viewablePerks objectAtIndex:btn.tag-1] title];
     perk.image = [btn backgroundImageForState:UIControlStateNormal];
-
+    
     [self.navigationController pushViewController:perk animated:YES];
-     
 }
 
 -(void)mapAll {
