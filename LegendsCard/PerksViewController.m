@@ -231,12 +231,13 @@
 -(void)setUpView {
     [self fetchData];
     
-    JS7Button *mapBtn = [[JS7Button alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
-    [mapBtn setTitle:@"Map"];
-    [mapBtn addTarget:self action:@selector(mapAll) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *mapButton = [[UIBarButtonItem alloc]
+                                  initWithTitle:@"Map"
+                                  style:UIBarButtonItemStylePlain
+                                  target:self
+                                  action:@selector(mapAll)];
     
-    UIBarButtonItem *viewAllMapBtn = [[UIBarButtonItem alloc]initWithCustomView:mapBtn];
-    self.navigationItem.rightBarButtonItem = viewAllMapBtn;
+    self.navigationItem.rightBarButtonItem = mapButton;
     
     mySearchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0 + SEARCH_BAR_BUFFER, 320, 40)];
     for(int i =0; i<[mySearchBar.subviews count]; i++) {
