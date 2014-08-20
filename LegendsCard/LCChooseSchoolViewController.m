@@ -62,10 +62,6 @@
     [claremont setTag:1];
     [claremont setBackgroundImage:[UIImage imageNamed:@"claremont"] forState:UIControlStateNormal];
     
-//    UIButton *iu = [[UIButton alloc]initWithFrame:CGRectMake(originX, [claremont getPositionOfBottom] + buffer, btnSize, btnSize)];
-//    [iu setTag:2];
-//    [iu setBackgroundImage:[UIImage imageNamed:@"IU-logo"] forState:UIControlStateNormal];
-    
     for (UIButton *b in @[mich, claremont]) {
         [b addTarget:self action:@selector(didTapBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:b];
