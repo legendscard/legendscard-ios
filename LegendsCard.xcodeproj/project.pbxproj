@@ -49,6 +49,9 @@
 		0341324417D8258F0020B287 /* block-m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324117D8258F0020B287 /* block-m@2x.png */; };
 		0341324517D8258F0020B287 /* claremont@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324217D8258F0020B287 /* claremont@2x.png */; };
 		0341324917D837190020B287 /* lcv3.0-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0341324817D837190020B287 /* lcv3.0-icon@2x.png */; };
+		03955A3619A6FCB300673D30 /* logo_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 03955A3519A6FCB300673D30 /* logo_120.png */; };
+		03955A3819A6FD6D00673D30 /* logo_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 03955A3719A6FD6D00673D30 /* logo_80.png */; };
+		03955A3A19A6FD8200673D30 /* logo_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 03955A3919A6FD8200673D30 /* logo_58.png */; };
 		03A9C49C19A446E100494CDE /* UIFont+LCFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9C49B19A446E100494CDE /* UIFont+LCFont.m */; };
 		03ECFC9C17C5AB5200EF52D5 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9B17C5AB5200EF52D5 /* PerksViewController.m */; };
 		03ECFCA017C5ABB900EF52D5 /* PerksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ECFC9F17C5ABB900EF52D5 /* PerksController.m */; };
@@ -156,6 +159,9 @@
 		0341324117D8258F0020B287 /* block-m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-m@2x.png"; sourceTree = "<group>"; };
 		0341324217D8258F0020B287 /* claremont@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claremont@2x.png"; sourceTree = "<group>"; };
 		0341324817D837190020B287 /* lcv3.0-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lcv3.0-icon@2x.png"; sourceTree = "<group>"; };
+		03955A3519A6FCB300673D30 /* logo_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_120.png; sourceTree = "<group>"; };
+		03955A3719A6FD6D00673D30 /* logo_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_80.png; sourceTree = "<group>"; };
+		03955A3919A6FD8200673D30 /* logo_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_58.png; sourceTree = "<group>"; };
 		03A9C49A19A446E100494CDE /* UIFont+LCFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+LCFont.h"; path = "Supporting Files/Categories/UIFont+LCFont.h"; sourceTree = "<group>"; };
 		03A9C49B19A446E100494CDE /* UIFont+LCFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+LCFont.m"; path = "Supporting Files/Categories/UIFont+LCFont.m"; sourceTree = "<group>"; };
 		03ECFC9A17C5AB5200EF52D5 /* PerksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksViewController.h; sourceTree = "<group>"; };
@@ -291,6 +297,9 @@
 			children = (
 				0310F7B917E1525E0065C384 /* lcv3.0-icon.png */,
 				0341324817D837190020B287 /* lcv3.0-icon@2x.png */,
+				03955A3519A6FCB300673D30 /* logo_120.png */,
+				03955A3719A6FD6D00673D30 /* logo_80.png */,
+				03955A3919A6FD8200673D30 /* logo_58.png */,
 				03139C2017C5A60900B4435E /* LegendsCard */,
 				03139C1917C5A60900B4435E /* Frameworks */,
 				03139C1817C5A60900B4435E /* Products */,
@@ -594,8 +603,10 @@
 				03ECFCF017C5AD7200EF52D5 /* Blue-Pin.png in Resources */,
 				03ECFCF117C5AD7200EF52D5 /* Green-Pin.png in Resources */,
 				03ECFCF217C5AD7200EF52D5 /* Red-Pin.png in Resources */,
+				03955A3A19A6FD8200673D30 /* logo_58.png in Resources */,
 				03ECFD1117C5B2E200EF52D5 /* all-pressed@2x.png in Resources */,
 				03ECFD1217C5B2E200EF52D5 /* all-unpressed@2x.png in Resources */,
+				03955A3819A6FD6D00673D30 /* logo_80.png in Resources */,
 				030785CE19A6EE1C0039C63A /* iu.png in Resources */,
 				03ECFD1317C5B2E200EF52D5 /* eat-pressed@2x.png in Resources */,
 				03ECFD1417C5B2E200EF52D5 /* eat-unpressed@2x.png in Resources */,
@@ -623,6 +634,7 @@
 				0310F7B517E14FDC0065C384 /* perks-pannel-i4@2x.png in Resources */,
 				0310F7B617E14FDC0065C384 /* perks-pannel-i5@2x.png in Resources */,
 				0310F7B817E150E10065C384 /* feed-pannel-i5@2x.png in Resources */,
+				03955A3619A6FCB300673D30 /* logo_120.png in Resources */,
 				0310F7BA17E1525E0065C384 /* lcv3.0-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,8 +806,8 @@
 					"\"$(SRCROOT)/LegendsCard\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "92f54da1-6a7f-46db-9c20-88fa63e0ada7";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "92f54da1-6a7f-46db-9c20-88fa63e0ada7";
+				PROVISIONING_PROFILE = "73A39ADF-383B-4EF6-A7B4-40EABB04A1FF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "73A39ADF-383B-4EF6-A7B4-40EABB04A1FF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
