@@ -159,9 +159,6 @@
     if ([user.school isEqualToString:@"umich"]) {
         url = [NSString stringWithFormat:@"http://search.twitter.com/search.json?q=&ands=legendscard&phrase=&rpp=100"];
     }
-    if ([user.school isEqualToString:@"state"]) {
-        url = [NSString stringWithFormat:@"http://search.twitter.com/search.json?q=&ands=claremontlegend&phrase=&rpp=100"];
-    }
     if ([user.school isEqualToString:@"iu"]) {
         url = [NSString stringWithFormat:@"http://search.twitter.com/search.json?q=&ands=legendscardiu&phrase=&rpp=100"];
         
