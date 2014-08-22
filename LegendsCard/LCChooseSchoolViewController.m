@@ -58,11 +58,11 @@
     [mich setTag:0];
     [mich setBackgroundImage:[UIImage imageNamed:@"block-m"] forState:UIControlStateNormal];
     
-    UIButton *claremont = [[UIButton alloc]initWithFrame:CGRectMake(originX, [mich getPositionOfBottom] + buffer, btnSize, btnSize)];
-    [claremont setTag:1];
-    [claremont setBackgroundImage:[UIImage imageNamed:@"claremont"] forState:UIControlStateNormal];
+    UIButton *iu = [[UIButton alloc]initWithFrame:CGRectMake(originX, [mich getPositionOfBottom] + buffer, btnSize, btnSize)];
+    [iu setTag:1];
+    [iu setBackgroundImage:[UIImage imageNamed:@"iu"] forState:UIControlStateNormal];
     
-    for (UIButton *b in @[mich, claremont]) {
+    for (UIButton *b in @[mich, iu]) {
         [b addTarget:self action:@selector(didTapBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:b];
     }
@@ -76,13 +76,13 @@
         case 0:
             schoolCode = @"umich";
             break;
+            
         case 1:
-            schoolCode = @"state";
-            break;
-        case 2:
             schoolCode = @"iu";
             break;
+            
         default:
+            schoolCode = @"umich";
             break;
     }
     
