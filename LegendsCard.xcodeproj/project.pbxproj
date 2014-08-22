@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030785CD19A6EE1C0039C63A /* iu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030785CB19A6EE1C0039C63A /* iu@2x.png */; };
+		030785CE19A6EE1C0039C63A /* iu.png in Resources */ = {isa = PBXBuildFile; fileRef = 030785CC19A6EE1C0039C63A /* iu.png */; };
 		030F62B817C5BF5500904712 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030F62B617C5BF5500904712 /* FeedViewController.m */; };
 		030F62B917C5BF5500904712 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030F62B717C5BF5500904712 /* FeedViewController.xib */; };
 		030F62C617C5C01E00904712 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 030F62BC17C5C01E00904712 /* blackArrow.png */; };
@@ -103,6 +105,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030785CB19A6EE1C0039C63A /* iu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iu@2x.png"; sourceTree = "<group>"; };
+		030785CC19A6EE1C0039C63A /* iu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iu.png; sourceTree = "<group>"; };
 		030F62B517C5BF5500904712 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		030F62B617C5BF5500904712 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		030F62B717C5BF5500904712 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
@@ -411,6 +415,8 @@
 		0341324717D8259A0020B287 /* Choose School */ = {
 			isa = PBXGroup;
 			children = (
+				030785CB19A6EE1C0039C63A /* iu@2x.png */,
+				030785CC19A6EE1C0039C63A /* iu.png */,
 				03139C5017C5A70C00B4435E /* background@2x.png */,
 				0341324117D8258F0020B287 /* block-m@2x.png */,
 				0341324217D8258F0020B287 /* claremont@2x.png */,
@@ -606,6 +612,7 @@
 				03ECFCF217C5AD7200EF52D5 /* Red-Pin.png in Resources */,
 				03ECFD1117C5B2E200EF52D5 /* all-pressed@2x.png in Resources */,
 				03ECFD1217C5B2E200EF52D5 /* all-unpressed@2x.png in Resources */,
+				030785CE19A6EE1C0039C63A /* iu.png in Resources */,
 				03ECFD1317C5B2E200EF52D5 /* eat-pressed@2x.png in Resources */,
 				03ECFD1417C5B2E200EF52D5 /* eat-unpressed@2x.png in Resources */,
 				03ECFD1517C5B2E200EF52D5 /* live-pressed@2x.png in Resources */,
@@ -619,6 +626,7 @@
 				030F62C917C5C01E00904712 /* blueArrow@2x.png in Resources */,
 				030F62CA17C5C01E00904712 /* grayArrow.png in Resources */,
 				030F62CB17C5C01E00904712 /* grayArrow@2x.png in Resources */,
+				030785CD19A6EE1C0039C63A /* iu@2x.png in Resources */,
 				030F62CC17C5C01E00904712 /* whiteArrow.png in Resources */,
 				030F62CD17C5C01E00904712 /* whiteArrow@2x.png in Resources */,
 				030F62D017C5C19400904712 /* loadmore@2x.png in Resources */,
