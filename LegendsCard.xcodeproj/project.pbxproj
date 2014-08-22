@@ -794,8 +794,8 @@
 					"\"$(SRCROOT)/LegendsCard\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "73A39ADF-383B-4EF6-A7B4-40EABB04A1FF";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "73A39ADF-383B-4EF6-A7B4-40EABB04A1FF";
+				PROVISIONING_PROFILE = "92f54da1-6a7f-46db-9c20-88fa63e0ada7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "92f54da1-6a7f-46db-9c20-88fa63e0ada7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
