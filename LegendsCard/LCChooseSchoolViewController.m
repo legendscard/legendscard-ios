@@ -9,6 +9,9 @@
 #import "LCChooseSchoolViewController.h"
 #import "User.h"
 
+static const NSInteger kMichiganButtonTag = 0;
+static const NSInteger kIUButtonTag = 1;
+
 @implementation UIView (Positioning)
 
 - (CGFloat)getPositionOfBottom
@@ -55,12 +58,14 @@
     CGFloat originX = self.view.frame.size.width/2. - btnSize/2.;
     
     UIButton *mich = [[UIButton alloc]initWithFrame:CGRectMake(originX, [cs getPositionOfBottom] + buffer, btnSize, btnSize)];
-    [mich setTag:0];
-    [mich setBackgroundImage:[UIImage imageNamed:@"block-m"] forState:UIControlStateNormal];
+    mich.tag = kMichiganButtonTag;
+    [mich setBackgroundImage:[UIImage imageNamed:@"block-m"]
+                    forState:UIControlStateNormal];
     
     UIButton *iu = [[UIButton alloc]initWithFrame:CGRectMake(originX, [mich getPositionOfBottom] + buffer, btnSize, btnSize)];
-    [iu setTag:1];
-    [iu setBackgroundImage:[UIImage imageNamed:@"iu"] forState:UIControlStateNormal];
+    iu.tag = kIUButtonTag;
+    [iu setBackgroundImage:[UIImage imageNamed:@"iu"]
+                  forState:UIControlStateNormal];
     
     for (UIButton *b in @[mich, iu]) {
         [b addTarget:self action:@selector(didTapBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -73,11 +78,11 @@
     NSInteger tag = sender.tag;
     NSString *schoolCode;
     switch (tag) {
-        case 0:
+        case kMichiganButtonTag:
             schoolCode = @"umich";
             break;
             
-        case 1:
+        case kIUButtonTag:
             schoolCode = @"iu";
             break;
             
